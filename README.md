@@ -4,7 +4,7 @@ This repository contains the lab exercises for data analytics in IoT.
 
 ## Part 1: Data Preparation
 
-### ["Understanding the data"](https://github.ncsu.edu/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/README.md)
+### ["Understanding the data"](https://github.com/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/README.md)
 ### “Collecting” the data
 ### “Cleaning” the data
 
@@ -17,9 +17,9 @@ This repository contains the lab exercises for data analytics in IoT.
 
 ### Monitoring Analytics
 ### Predictive Analytics
-   1. [Data Classification](https://github.ncsu.edu/IoT-ECE-NCSU/data-analytics/blob/master/Predictive%20Analytics/Data%20Classfication/README.md)
-         1. [Wine Classification](https://github.ncsu.edu/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/wine.ipynb)
-         2. [Crime Classification](https://github.ncsu.edu/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/crime.ipynb)
+   1. [Data Classification](https://github.com/IoT-ECE-NCSU/data-analytics/blob/master/Predictive%20Analytics/Data%20Classfication/README.md)
+         1. [Wine Classification](https://github.com/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/wine.ipynb)
+         2. [Crime Classification](https://github.com/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/crime.ipynb)
 ### Acting Analytics
 ### Streaming Analytics
 
