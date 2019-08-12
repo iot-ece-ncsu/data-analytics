@@ -2,63 +2,52 @@
 # Data Preparation
 
 ### What is Exploratory Data Analysis (EDA)?
-While classical statistics focused primarily on inference, i.e. the process of drawing conclusions about large datasets on the basis of small samples, exploratory data analysis or data analysis was a field (of which inference is a part) that began and gained momentum on the basis of work done by John W. Tukey. In 1962, he published a paper [The Future of Data Analysis](https://projecteuclid.org/download/pdf_1/euclid.aoms/1177704711), and in 1977 a book, [Exploratory Data Analysis](https://www.amazon.com/Exploratory-Data-Analysis-John-Tukey/dp/0201076160) (fun fact: He also coined the terms 'bit'(**bi**nary digi**t**) and 'software'). Hence EDA is a process of analyzing data sets to summarize their characterestics, mathematically or visually.
+While classical statistics focused primarily on inference, i.e. the process of drawing conclusions about large datasets on the basis of small samples, exploratory data analysis or data analysis was a field (of which inference is a part) that began and gained momentum on the basis of work done by John W. Tukey. In 1962, he published a paper [The Future of Data Analysis](https://projecteuclid.org/download/pdf_1/euclid.aoms/1177704711), and in 1977 a book, [Exploratory Data Analysis](https://www.amazon.com/Exploratory-Data-Analysis-John-Tukey/dp/0201076160) (fun fact: He also coined the terms 'bit'(**bi**nary digi**t**) and 'software'). Hence EDA is a process of analyzing data sets to summarize their characterestics, mathematically or visually. [1]
 
-### Understanding the data*
-Exploratory data analysis is essential step before we begin identifying patterns in data. It helps us answer the following questions - 
-1. Is the data accurate? Are there any outliers? All entries are valid and present?
-2. Which models to use on the data?
-3. How are the independent variables correlated?
-4. How are the independent and dependent variables correlated?
+### Understanding the data
+The data that we will deal in this course comes from sources in the form of raw unstructured data which can't be understood by a software without refinement. Examples include electronic medical records (EMRs), images (jpegs), instant messages, etc. These types of data do not have a strict data model to adhere to. To convert this data to structured data such as ordered list, database table or spreadsheets, we must do the following -  
+1. Identify data types
+    - Numeric 
+    - Categorical
+    - Ordinal
+2. Fit the dataset into a structured object
+    - Rectangular 2D objects such as a spreadsheet, database table
+        - Feature
+        - Outcome
+        - Records
+    - Non rectangular data objects 
+        - Time series data
+        - Spatial data structure
+        - Graphs
 
-The exploratory data analysis methods can be classified in the following ways -
-1. Graphical vs non-graphical
-    1. Graphical methods - summarize the data in a diagrammatic or pictorial way
-    2. Non-graphical methods - calculation of summary statistics
-2. Univariate vs multivariate exploration 
-    1. Univariate methods - look at one variable (data column) at a time.
-    2. Multivariate methods - look at two or more variables at a time to explore relationships.
-    
-Each category of exploratory data analysis explained.
-1. Univariate graphical methods
-    - Goals: 
-        - Understand the sample distribution of the variable in consideration and draw tentative conclusions for the population distributions most compatible with the sample distribution. 
-        - Identify outliers 
-    - Methods based on types of data:
-        - **Categorical Data**: The following three characteristics are of most interest in categorical data. 
-            - Frequency of values: Count of a categorical value for a variable.
-            - Relative frequency or proportion of values: Proportion of the above frequency to overall data points of that variable.
-        - **Quantitative Data**
-        - **Central Tendency**
-        - **Spread**
-        - **Skewness and kurtosis**
+Once, we have converted the raw data to structured data, we can start analyzing the data. 
+### Exploring Numerical Data
+1. Analyzing data in a single number
+    1. Finding estimates of location
+        - Mean
+        - Median
+        The key factors in identifying the appropriate estimate of locations is **robustness**.
+    2. Finding estimates of variability
+        - Standard deviation
+        - Estimate based on percentiles
+2. Analyzing data as a distribution
+    - Percentiles
+    - Boxplots
+    - Frequency tables
+    - Histograms
+    - Density estimates.
 
-2.  Univariate graphical methods
-    - Goals:
-    - Methods:
-        - **Histograms**
-        - **Stem-and-leaf plots**
-        - **Boxplots**
-        - **Quantile-normal plots**
-        
-3.  Multivariate non-graphical methods
-    - Goals:
-    - Methods:
-        - **Cross-tabulation**
-        - **Correlation for categorical data**
-        - **Univariate statistics by category**
-        - **Correlation and covariance**
-        - **Covariance and correlation matrices**
-        
-4. Multivariate graphical methods
-    - Goals:
-    - Methods:
-        - **Univariate graphs by category**
-        - **Scatterplots**
+### Exploring Binary/Categorical Data
+1. Analyzing data in a single number
+    1. Mode
+    2. Expected value
+2. Analyzing data as a distribution
+    1. Bar charts
+    2. Pie charts
 
-### Collecting the data 
+### References
+[[1.]](https://en.wikipedia.org/wiki/Exploratory_data_analysis) Exploratory Data Analysis
 
-### Cleaning the data
+[[2.]](https://www.techopedia.com/definition/13865/unstructured-data) Unstructured data definition
 
-
-*[This](https://www.stat.cmu.edu/~hseltman/309/Book/chapter4.pdf) chapter on exploratory data analysis is the basis of the section understanding the data. (some parts have been copied)
+[[3.]](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962) Practical Statistics for Data Scientists
