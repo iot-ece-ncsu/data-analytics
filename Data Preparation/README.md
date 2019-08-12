@@ -1,6 +1,9 @@
 
 # Data Preparation
 
+### What is Exploratory Data Analysis (EDA)?
+While classical statistics focused primarily on inference, i.e. the process of drawing conclusions about large datasets on the basis of small samples, exploratory data analysis or data analysis was a field (of which inference is a part) that began and gained momentum on the basis of work done by John W. Tukey. In 1962, he published a paper [The Future of Data Analysis](https://projecteuclid.org/download/pdf_1/euclid.aoms/1177704711), and in 1977 a book, [Exploratory Data Analysis](https://www.amazon.com/Exploratory-Data-Analysis-John-Tukey/dp/0201076160) (fun fact: He also coined the terms 'bit'(**bi**nary digi**t**) and 'software'). Hence EDA is a process of analyzing data sets to summarize their characterestics, mathematically or visually.
+
 ### Understanding the data*
 Exploratory data analysis is essential step before we begin identifying patterns in data. It helps us answer the following questions - 
 1. Is the data accurate? Are there any outliers? All entries are valid and present?
