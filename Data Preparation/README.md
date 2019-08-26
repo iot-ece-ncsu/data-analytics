@@ -53,11 +53,30 @@ The data that we will deal in this course comes from sources in the form of raw 
         In the rest of this lab we will focus only on rectangular data.
         
 Once, we have converted the raw data to structured data, we can start analyzing the data. 
+
 ### Exploring Numerical Data
 1. Analyzing data in a single number
-    1. Finding estimates of location
-        - Mean
-        - Median
+    1. __Finding estimates of location__: A feature/variable can be characterized by the estimate of its' data points' location or central tendency. _An estimate of location is said to be robust when it is not sensitive to extreme values or outliers_. Mean and median are most common estimates of location, but are they robust enough?
+        - __Mean__: Sum of all values divided by the number of values. In the equation below x-bar represents the mean of sample from a population. _n_ refers to the number of records or observation the sample.
+       
+             ![](https://latex.codecogs.com/svg.latex?\inline&space;Mean&space;=&space;\bar{x}&space;=&space;\frac{\sum_{i}^{n}x_i}{n})
+             
+             - __Trimmed Mean__: A more robust estimate than mean is trimmed mean. It is calculated by dropping a fixed number of _sorted values_ at each end, and then taking an average of the remaining values. The objective is to get rid of outliers or extreme values from both ends of a sequence. The formula below assumes _p_ smallest and _p_ largest values are omitted.
+             
+                  ![](https://latex.codecogs.com/svg.latex?\inline&space;Trimmed&space;&space;mean&space;=&space;\bar{x}&space;=&space;\frac{\sum_{i=p&plus;1}^{n-p}x_i}{n-2p})
+                  
+             - __Weighted Mean__: Each data value in the sample is multiplied with a pre-determined weight and their sum is divided by the sum of weights. In the formula below, _w_ is the weight of a data point.
+             
+                  ![](https://latex.codecogs.com/svg.latex?\inline&space;Weighted&space;&space;mean&space;=&space;\bar{x_w}&space;=&space;\frac{\sum_{i=1}^{n}w_ix_i}{\sum_{i}^{n}w_i})
+                  
+               Practical use of weighted mean - use it for compensation of unreliable data sources, for e.g.: 
+                    1. Give lower weight to highly variable values, as they can influence the estimate. For example, if a sensor is inaccurate, then among all sensors it can be given a lower weight. [3]
+                    2. Give higher weight to an under-represented group to equally represent all groups.
+                    
+        - __Median__: The middle value in a sorted list of data is the median of that list of data. It only depends on a single value in a dataset, unlike the mean which depends on all the values, so we can say mean is more sensitive to data. Hence, we can say that median is a more robust estimate of location. For e.g. to estimate a typical household income in neighborhoods in the bay area, if we use mean to estimate the household income in the neighborhood where Mark Zuckerburg lives, and say, San Jose, we will get a very different result just because of one outlier in Menlo Park. However, if we use median, the observation in the middle will remain the same irrespective of outliers. [3]. Note, we can also achieve the same result with a trimmed mean.
+        
+             - __Weighted Median__: Just like in the calculation of a median, the data is sorted. Each data point also has a corresponding weight. The weighted median is such that sum of weights for the left data points is equal to the sum of weights for all the data points on its right.
+             
         The key factors in identifying the appropriate estimate of locations is **robustness**.
     2. Finding estimates of variability
         - Standard deviation
