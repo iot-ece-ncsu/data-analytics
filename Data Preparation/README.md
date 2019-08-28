@@ -78,6 +78,8 @@ Once, we have converted the raw data to structured data, we can start analyzing 
         
              - __Weighted Median__: Just like in the calculation of a median, the data is sorted. Each data point also has a corresponding weight. The weighted median is such that sum of weights for the left data points is equal to the sum of weights for all the data points on its right.
              
+        ![mean-median-mode-meme](https://miro.medium.com/max/1398/1*JVuKIOTL3YHsSlW_hdtvxg.png)
+        
         The key factors in identifying the appropriate estimate of locations is **robustness**.
     2. Finding estimates of variability
         - Standard deviation
