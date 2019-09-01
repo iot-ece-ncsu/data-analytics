@@ -1,0 +1,8 @@
+title: Data-analytics
+description: Data analytics labs for ECE 592/402 and CSC 591
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
