@@ -4,9 +4,9 @@ This repository contains the lab exercises for data analytics in IoT.
 
 ## Part 1: Data Preparation
 
-### ["Understanding the data"](https://github.com/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/README.md)
-### “Collecting” the data
-### “Cleaning” the data
+### [Understanding the data](https://github.com/IoT-ECE-NCSU/data-analytics/blob/master/Data%20Preparation/README.md)
+### Collecting the data
+### Cleaning the data
 
 ## Part 2: Analytics Algorithms
 
